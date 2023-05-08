@@ -1,0 +1,75 @@
+Pada artikel sebelumnya, kita telah membahas beberapa konsep dasar dalam bahasa Python seperti variabel, tipe data, operator, dan struktur kontrol. Sekarang, mari kita lanjutkan dengan topik-topik lainnya yang perlu diketahui dalam bahasa Python.
+
+Fungsi
+Fungsi adalah blok kode yang dapat dipanggil oleh program lain. Fungsi biasanya digunakan untuk menghindari duplikasi kode dan memperbaiki keterbacaan kode. Untuk mendefinisikan sebuah fungsi di Python, kita menggunakan kata kunci 'def', diikuti dengan nama fungsi, dan parameter yang diterima oleh fungsi.
+Contoh:
+
+python
+Copy code
+def hitung_luas_segitiga(alas, tinggi):
+    luas = (alas * tinggi) / 2
+    return luas
+
+hasil = hitung_luas_segitiga(10, 5)
+print(hasil)
+Output:
+
+Copy code
+25.0
+List
+List adalah salah satu tipe data di Python yang digunakan untuk menyimpan kumpulan data yang dapat diubah-ubah (mutable). Kita dapat menambah, menghapus, atau memodifikasi elemen di dalam list. Untuk membuat list di Python, kita menggunakan tanda kurung siku ([]).
+Contoh:
+
+scss
+Copy code
+buah = ['apel', 'jeruk', 'pisang', 'mangga']
+print(buah)
+
+buah[1] = 'melon'
+print(buah)
+
+buah.append('semangka')
+print(buah)
+
+buah.remove('pisang')
+print(buah)
+Output:
+
+css
+Copy code
+['apel', 'jeruk', 'pisang', 'mangga']
+['apel', 'melon', 'pisang', 'mangga']
+['apel', 'melon', 'pisang', 'mangga', 'semangka']
+['apel', 'melon', 'mangga', 'semangka']
+Tuple
+Tuple adalah tipe data di Python yang serupa dengan list, namun tidak dapat diubah-ubah (immutable). Tuple biasanya digunakan untuk menyimpan data yang tetap atau konstan.
+Contoh:
+
+bash
+Copy code
+hari = ('Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu')
+print(hari)
+print(hari[0])
+Output:
+
+arduino
+Copy code
+('Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu')
+Senin
+Dictionary
+Dictionary adalah tipe data di Python yang digunakan untuk menyimpan data dalam bentuk pasangan key-value. Dictionary serupa dengan kamus di dunia nyata. Untuk membuat dictionary di Python, kita menggunakan tanda kurung kurawal ({}) dan memasukkan pasangan key-value di dalamnya.
+Contoh:
+
+bash
+Copy code
+siswa = {'nama': 'Andi', 'umur': 20, 'alamat': 'Jakarta'}
+print(siswa)
+print(siswa['nama'])
+Output:
+
+arduino
+Copy code
+{'nama': 'Andi', 'umur': 20, 'alamat': 'Jakarta'}
+Andi
+Modul
+Modul adalah kumpulan kode program yang dapat digunakan oleh program lain. Dalam Python, modul merupakan file Python yang berisi definisi variabel, fungsi, atau kelas
